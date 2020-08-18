@@ -35,7 +35,7 @@ function wake(mac, options, callback){
     callback = options;
   }
   const { address, port } = Object.assign({
-    address : '255.255.255.255',
+    address : options.address,
     port    : 9
   }, options);
   // create magic packet
